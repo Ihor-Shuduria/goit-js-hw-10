@@ -59,6 +59,7 @@ startButton.addEventListener('click', () => {
       });
       input.disabled = false;
       startButton.disabled = true;
+      userSelectedDate = null;
       return;
     }
     const time = convertMs(diff);
