@@ -57,6 +57,8 @@ startButton.addEventListener('click', () => {
         message: 'Timer finished!',
         position: 'topRight',
       });
+      input.disabled = false;
+      startButton.disabled = true;
       return;
     }
     const time = convertMs(diff);
